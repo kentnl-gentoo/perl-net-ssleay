@@ -4,7 +4,7 @@
 # Copyright (C) 2005 Florian Ragwitz <rafl@debian.org>, All Rights Reserved.
 # Copyright (C) 2005 Mike McCauley <mikem@open.com.au>, All Rights Reserved.
 #
-# $Id$
+# $Id: SSLeay.pm 171 2006-09-14 21:40:09Z florian-guest $
 #
 # Version 1.04, 31.3.1999
 # 30.7.1999, Tracking OpenSSL-0.9.3a changes, --Sampo

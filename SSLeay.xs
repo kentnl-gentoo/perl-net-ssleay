@@ -63,7 +63,7 @@
  *            These changes to deal with thread safety issues.
  * 01.08.2006 set_*fd nw woork with filehandles as well as filenos on Windows
  *
- * $Id$
+ * $Id: SSLeay.xs 180 2007-06-17 00:34:54Z mikem-guest $
  * 
  * The distribution and use of this module are subject to the conditions
  * listed in LICENSE file at the root of OpenSSL-0.9.6b
