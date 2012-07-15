@@ -123,7 +123,6 @@ EOM
         @{ $opts->{lib_links} } = map { $_ =~ s/32\b//g } @{ $opts->{lib_links} } if $Config{use64bitall};
     }
     else {
-        $opts->{optimize} = '-O2 -g';
         push @{ $opts->{lib_links} },
              ($rsaref
               ? qw( ssl crypto RSAglue rsaref z )
