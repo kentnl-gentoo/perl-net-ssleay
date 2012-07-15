@@ -112,7 +112,6 @@ EOM
         }
     }
     else {
-        $opts->{optimize} = '-O2 -g';
         push @{ $opts->{lib_links} },
              ($rsaref
               ? qw( ssl crypto RSAglue rsaref z )
