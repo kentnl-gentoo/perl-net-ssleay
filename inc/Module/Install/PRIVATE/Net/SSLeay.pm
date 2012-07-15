@@ -130,7 +130,7 @@ EOM
 
         if (($Config{cc} =~ /aCC/i) && $^O eq 'hpux') {
             print "*** Enabling HPUX aCC options (+e)\n";
-            $opts->{optimize} = '+e -O2 -g';
+            $opts->{optimize} = '+e ' . $opts->{optimize};
         }
 
         if ( (($Config{ccname} || $Config{cc}) eq 'gcc') && ($Config{cccdlflags} =~ /-fpic/) ) {
