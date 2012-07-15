@@ -61,10 +61,8 @@ sub ssleay_get_build_opts {
         cccdlflags => '',
     };
     for ("$prefix/include", "$prefix/inc32", '/usr/kerberos/include') {
-      push @{$opts->{inc_paths}}, $_ if -f "$_/openssl/ssl.h";
     }
     for ($prefix, "$prefix/lib64", "$prefix/lib", "$prefix/out32dll") {
-      push @{$opts->{lib_paths}}, $_ if -d $_;
     }
 
     my $rsaref  = $self->ssleay_is_rsaref;
