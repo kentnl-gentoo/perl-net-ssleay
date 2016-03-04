@@ -46,11 +46,7 @@ EOM
         LIBS => join(' ', (map {"-L$_"} @{$opts->{lib_paths}}), (map {"-l$_"} @{$opts->{lib_links}})),
     );
 
-    if ( $self->prompt(
-            "Do you want to run external tests?\n".
-            "These tests *will* *fail* if you do not have network connectivity.",
-            'n',
-    ) =~ /^y/i ) {
+    if ( 'yes' eq ( $ENV{NETWORK_TESTS} || '' ) ) {
         $self->tests('t/*/*.t t/*/*/*.t');
     } else {
         $self->tests('t/local/*.t t/handle/local/*.t');
